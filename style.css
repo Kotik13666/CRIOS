@@ -1,0 +1,243 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.centr{
+    max-width: 1480px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.burger{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: 000;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 37px;
+
+}
+
+.burger .line {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.burger .line:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.burger .line:first-child{
+    margin-top: 22px;
+
+}
+
+.logo {
+    display: inline-block;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 35px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 35%;
+    top: -205px;
+    text-align: center;
+}
+
+header{
+    position: relative;
+    height: 240px;
+}
+
+.logo .name{
+    display: inline-block;
+    margin-top: 262px;
+    font-size: 48px;
+    color: #43a9ff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #e4e6e8;
+}
+
+.search{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 65px;
+}
+
+.search i{
+    font-size: 21px;
+}
+
+.conteiner2 {
+    height: 1000px;
+    background-image: url('/images/background_head.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    text-align: center;
+}
+
+.conteiner2 h2{
+    font-size: 48px;
+}
+
+.conteiner2 p{
+    font-size: 20px;
+    color: #dbdddf;
+}
+
+.conteiner2 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin-top: 150px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.02);
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner2 a:hover{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner2 a:focus{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+.conteiner4 .centr{
+    height: 1000px;
+} 
+
+.conteiner4 div{
+    display: inline-block;
+    width: 50%;
+    height: 560px;
+    margin: -2px;
+    background-size: cover;
+    background-color: #f7f8fb;
+}
+
+.conteiner4 h2{
+    padding-top: 140px;
+    padding-bottom: 1em;
+    font-size: 48px;
+}
+
+.conteiner4 p{
+    font-size: 20px;
+    padding-top: 1em;
+    color: #dbdddf;
+}
+
+#o1{
+    padding-left: 8%;
+}
+#o2{
+    padding-left: 15%;
+}
+
+.conteiner7{
+    height: 630px;
+    background-image: url('./images/man.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+
+}
+
+.conteiner7 h2{
+    padding-top: 150px;
+    padding-bottom: 1em;
+    font-size: 48px;
+    color: #fe3254;
+}
+
+.conteiner7 p{
+    font-size: 20px;
+    padding-top: 1em;
+    color: #dbdddf;
+}
+
+#o7{
+    padding-left: 55%;
+}
+
+.conteiner8{
+    height: 400px;
+    text-align: center;
+}
+
+.conteiner8 h2{
+    font-size: 48px;
+}
+
+.conteiner8 p{
+    font-size: 20px;
+    color: #dbdddf;
+    padding-top: 100px;
+    padding-bottom: 1em;
+}
+
+.conteiner8 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin-top: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.04);
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner8 a:hover{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner8 a:focus{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+footer{
+    height: 1130px;
+    background-image: url('./images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
