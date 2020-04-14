@@ -8,235 +8,284 @@
 }
 
 .wrapper{
-    max-width: 2000px;
+    max-width: 2000px;         /*ширина всей страницы*/
     width: 100%;
     margin: 0 auto;
 
 }
 
 .centr{
-    max-width: 1480px;
+    max-width: 1480px;         /*ширина центровки страницы*/
     width: 90%;
     margin: 0 auto;
-
 }
 
+a{
+    display: inline-block;     /*общее строение всех ссылок */
+    text-decoration: none;
+    color: #43a9ff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.02);
+    transition: 0.5s ease-in-out;
+}
+a:hover{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+a:focus{
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    font-size: 48px;          /*регулировка, основной текст на странице*/
+}
+p{
+    font-size: 20px;           /*регулировка, основной текст на странице*/
+    color: #dbdddf;
+}
+
+
+header{
+    position: relative;
+    height: 240px;             /*размер хедера*/
+}
 .burger{
-    display: inline-block;
+    display: inline-block; 
     width: 60px;
     height: 60px;
     background-color: 000;
     border-radius: 50%;
     box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
     margin-top: 37px;
-
 }
-
 .burger .line {
     display: block;
-    width: 18px;
-    height: 2px;
-    background-color: #000000;
-    margin: 0 auto;
-}
-
-.burger .line:nth-child(2){
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.burger .line:first-child{
-    margin-top: 22px;
-
-}
-
-.logo {
-    display: inline-block;
-    width: 410px;
-    height: 410px;
-    border-radius: 50%;
-    box-shadow: 0 0 25px 35px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    left: 35%;
-    top: -205px;
     text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
 }
-
-header{
-    position: relative;
-    height: 240px;
-}
-
-.logo .name{
-    display: inline-block;
-    margin-top: 262px;
-    font-size: 48px;
-    color: #43a9ff;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.logo p{
-    font-weight: bold;
-    font-size: 18px;
-    color: #e4e6e8;
-}
-
 .search{
     position: absolute;
     right: 0;
     text-align: center;
     line-height: 65px;
 }
-
 .search i{
     font-size: 21px;
 }
+.logo {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 35px rgba(0, 0, 0, 0.1);
+    width: 410px;
+    height: 410px;
+    left: calc(50% - 205px);
+    top: -205px;
+}
+.logo .name{
+    display: inline-block;
+    margin-top: 235px;
+    font-size: 48px;
+    color: #43a9ff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.logo p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #e4e6e8;
+}
 
-.conteiner2 {
-    height: 1000px;
-    background-image: url('/images/background_head.png');
+
+.conteiner2{
+    height: 120vh;
+    background-image: url('../images/background_head.png'); /*лошадка*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
     text-align: center;
 }
+.conteiner2 a{
+    margin-top: 12vh;          /* позишка ссылки*/
+}
 
-.conteiner2 h2{
+
+.conteiner3{
+    background-color: #fefeff;
+    text-align: center;
+}
+.conteiner3_centr h2{
+    padding-bottom: 2em;
+}
+.conteiner3_centr p{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.item{
+    display: inline-block;
+    text-align: center;
+    width: 20%;               /*ширина и отступы карточек*/
+    margin: 0 2.3%;
+}
+.cards i{
+    color: #43a9ff;         /*иконки карточек*/
     font-size: 48px;
 }
-
-.conteiner2 p{
-    font-size: 20px;
-    color: #dbdddf;
+.cards h3{
+    font-size: 18px;          /*параметры текста карточек*/
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.cards p{
+    font-size: 12px;
+    padding-bottom: 0.5em;
+}
+.conteiner3 a{                 
+    margin: 15vh auto;           /*позишка ссылки*/
 }
 
-.conteiner2 a{
-    display: inline-block;
-    text-decoration: none;
-    color: #43a9ff;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #fff;
-    padding: 20px 40px;
-    margin-top: 150px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.02);
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner2 a:hover{
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner2 a:focus{
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.5);
-}
 
 .conteiner4 .centr{
-    height: 1000px;
-} 
+}
 
-.conteiner4 div{
-    display: inline-block;
-    width: 50%;
-    height: 560px;
-    margin: -2px;
-    background-size: cover;
+.meinzimales, .meindrova{
+    position: relative;          /*родительские блоки*/
     background-color: #f7f8fb;
 }
+.zimales, .drova, .part1, .part2{
+    display: inline-block;        /*дочерние общее*/
+    width: 100%;
+}
+.zimales, .drova{
+    position: absolute;
+    width: 100%;
+}
+.zimales{
+    margin-left: 0;                /*позишка картинки*/
+}
+.drova{
+    margin-left: 50%;              /*позишка картинки*/
+}
+.conteiner4 img{
+    width: 50%;
 
+}
+.part1, .part2{
+    padding-top: 14vh;             /*параметры текста четвёртого контейнера*/
+    padding-bottom: 14vh;
+}
 .conteiner4 h2{
-    padding-top: 140px;
     padding-bottom: 1em;
-    font-size: 48px;
 }
-
 .conteiner4 p{
-    font-size: 20px;
     padding-top: 1em;
-    color: #dbdddf;
+}
+.o1{
+    padding-left: 55%;
+}
+.o2{
+    padding-left: 6%;
 }
 
-#o1{
-    padding-left: 8%;
+
+.conteiner5 .centr{
+
 }
-#o2{
-    padding-left: 15%;
+.meinpleer, .meinchat{
+    position: relative;                 /*родительские блоки общее*/
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.meinpleer{
+    background-position-x: 2%;
+    background-position-y: -5vh;
+    height: 80vh;
+}
+.meinchat{
+    background-position: bottom;
+    background-position: right;
+    background-position-y: 40vh;
+    height: 80vh;
 }
 
-.conteiner7{
-    height: 630px;
+.pleer, .part3, .chat, .part4{
+    display: inline-block;              /*дочерние общее*/
+    width: 100%;
+}
+.pleer, .chat{
+    position: absolute;                 /*дочерние с картинками общее*/ 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.pleer{
+    margin-left: 20%;
+}
+.chat{
+    margin-left: 70%;
+}
+.pleer img, .chat img{
+    max-height: 60vh;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.05);
+}
+.conteiner5 h2{
+    padding-top: 140px;                  /*параметры текста пятого контейнера*/
+    padding-bottom: 1em;
+}
+.conteiner5 p{
+    padding-top: 1em;
+}
+.o3{
+    padding-left: 50%;
+}
+.o4{
+    padding-left: 20%;
+}
+
+
+.conteiner6{
+    height: 85vh;
     background-image: url('./images/man.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
-
 }
-
-.conteiner7 h2{
-    padding-top: 150px;
+.conteiner6 h2{
+    padding-top: 20vh;               /*параметры текста шестого контейнера*/
     padding-bottom: 1em;
-    font-size: 48px;
     color: #fe3254;
 }
-
-.conteiner7 p{
-    font-size: 20px;
+.conteiner6 p{
     padding-top: 1em;
-    color: #dbdddf;
 }
-
-#o7{
+.o6{
     padding-left: 55%;
 }
 
-.conteiner8{
-    height: 400px;
+
+.conteiner7{
+    height: 50vh;
     text-align: center;
 }
-
-.conteiner8 h2{
-    font-size: 48px;
-}
-
-.conteiner8 p{
-    font-size: 20px;
-    color: #dbdddf;
-    padding-top: 100px;
+.conteiner7 p{
+    padding-top: 10vh;
     padding-bottom: 1em;
 }
-
-.conteiner8 a{
-    display: inline-block;
-    text-decoration: none;
-    color: #43a9ff;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #fff;
-    padding: 20px 40px;
-    margin-top: 100px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.04);
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner8 a:hover{
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner8 a:focus{
-    box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.5);
+.conteiner7 a{
+    margin-top: 10vh;              /*позишка ссылки*/
 }
 
 
 footer{
-    height: 1130px;
-    background-image: url('./images/footer.png');
+    height: 130vh;
+    background-image: url('../images/footer.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
