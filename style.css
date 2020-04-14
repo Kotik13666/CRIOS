@@ -152,34 +152,34 @@ header{
 }
 
 
-.conteiner4 .centr{
-}
-
+.conteiner4 .centr{}
 .meinzimales, .meindrova{
     position: relative;          /*родительские блоки*/
+    width: 100%;
+    height: 65vh;
     background-color: #f7f8fb;
 }
 .zimales, .drova, .part1, .part2{
     display: inline-block;        /*дочерние общее*/
-    width: 100%;
+    width: 50%;
+}
+.part1, .drova{
+    position: absolute;
 }
 .zimales, .drova{
-    position: absolute;
-    width: 100%;
-}
-.zimales{
-    margin-left: 0;                /*позишка картинки*/
+    overflow: hidden;
+    height: 100%;
 }
 .drova{
     margin-left: 50%;              /*позишка картинки*/
 }
 .conteiner4 img{
-    width: 50%;
-
+    height: 100%;
 }
 .part1, .part2{
-    padding-top: 14vh;             /*параметры текста четвёртого контейнера*/
-    padding-bottom: 14vh;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
 }
 .conteiner4 h2{
     padding-bottom: 1em;
@@ -188,7 +188,7 @@ header{
     padding-top: 1em;
 }
 .o1{
-    padding-left: 55%;
+    padding-left: 15%;
 }
 .o2{
     padding-left: 6%;
@@ -225,10 +225,10 @@ header{
     padding-bottom: 10vh;
 }
 .pleer{
-    margin-left: 20%;
+    margin-left: 15%;
 }
 .chat{
-    margin-left: 70%;
+    margin-left: 65%;
 }
 .pleer img, .chat img{
     max-height: 60vh;
@@ -246,7 +246,7 @@ header{
     padding-left: 50%;
 }
 .o4{
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 
