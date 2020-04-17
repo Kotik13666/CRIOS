@@ -325,7 +325,9 @@ footer{
     }
     p{
         font-size: 16px;           /*регулировка, основной текст на странице*/
-        color: #dbdddf;
+    }
+    footer{
+        background-position-x: 55%;
     }
 }
 @media(max-width: 1100px){
@@ -388,5 +390,136 @@ footer{
         margin-top: 500px;
         position: inherit;
         transform: translateY(-85%);
+    }
+    footer{
+        background-position-x: 60%;
+    }
+}
+
+@media(max-width: 800px){
+    h2{
+        font-size: 30px;          /*регулировка, основной текст на странице*/
+    }
+    p{
+        font-size: 15px;           /*регулировка, основной текст на странице*/
+    }
+    .logo {
+        width: 310px;
+        height: 310px;
+        left: calc(50% - 155px);
+        top: -155px;
+    }
+    .logo .name{
+        margin-top: 175px;
+        font-size: 38px;
+    }
+    .logo p{
+        font-size: 16px;
+    }
+    .conteiner2{
+        background-position-x: 55%;
+    }
+    .conteiner5{
+        height: 1000px;
+    }
+    .meinpleer, .meinchat{
+        background-size: 30%;
+        height: 500px;
+    }
+    .meinpleer{
+        background-position-y: 0;
+    }
+    .meinchat{
+        background-position-y: 300px;
+    }
+    .pleer, .part3, .chat, .part4{
+        display: block;              /*дочерние общее*/
+    }
+    .pleer, .chat{
+        position: inherit;                 /*дочерние с картинками общее*/ 
+    }
+    .pleer{
+        margin-left: 15%;
+        width: 85%;
+    }
+    .chat{
+        margin-left: 25%;;
+    }
+    .conteiner5 h2{
+        padding-top: 50px;                  /*параметры текста пятого контейнера*/
+    }
+    .o3, .o4{
+        padding: 0;
+        text-align: center;
+    }
+    footer{
+        background-position-x: 65%;
+    }
+}
+
+@media(max-width:600px){
+    h2{
+        font-size: 24px;          /*регулировка, основной текст на странице*/
+    }
+    p{
+        font-size: 15px;           /*регулировка, основной текст на странице*/
+    }
+    header{
+        position: relative;
+        height: 240px;             /*размер хедера*/
+    }
+    .burger{
+        margin-top: 80px;
+    }
+    .logo {
+        width: 260px;
+        height: 260px;
+        left: calc(50% - 130px);
+        top: -130px;
+    }
+    .logo .name{
+        margin-top: 140px;
+        font-size: 38px;
+    }
+    .logo p{
+        font-size: 16px;
+    }
+    a{
+        font-size: 10spx;
+    }
+    .cards .item{
+        width: 100%;
+    }
+}
+
+@media(max-widtn: 500px){
+    h2{
+        font-size: 10px;          /*регулировка, основной текст на странице*/
+    }
+    p{
+        font-size: 15px;           /*регулировка, основной текст на странице*/
+    }
+    header{
+        position: relative;
+        height: 240px;             /*размер хедера*/
+    }
+    .burger{
+        margin-top: 300px;
+    }
+    .logo {
+        width: 220px;
+        height: 220px;
+        left: calc(50% - 110px);
+        top: -110px;
+    }
+    .logo .name{
+        margin-top: 140px;
+        font-size: 30px;
+    }
+    .logo p{
+        font-size: 16px;
+    }
+    a{
+        font-size: 10px;
     }
 }
